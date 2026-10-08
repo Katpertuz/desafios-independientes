@@ -8,8 +8,9 @@ if(cantidadEstudiantes<=0 || isNaN(cantidadEstudiantes))
 for(let i=1; i<=cantidadEstudiantes; i++)
     {let nota = parseFloat(prompt(`Ingrese la nota del estudiante ${i}:`));
       sumaNotas += nota;
+
+      let promedio = sumaNotas / cantidadEstudiantes;
+  alert(`El promedio de notas del curso es: ${promedio.toFixed(2)}`);
       
 
 }
-let promedio = sumaNotas / cantidadEstudiantes;
-  alert(`El promedio de notas del curso es: ${promedio.toFixed(2)}`);
