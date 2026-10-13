@@ -7,7 +7,7 @@ const registroEmpleados = [{
 }, { nombre: "Juliana", horasTrabajadas: 10, tarifaHora: 25000 }
 
 ]
-const calcularPagoDiario = (horasTrabajadas, tarifaHora) {
+const calcularPagoDiario = (horasTrabajadas, tarifaHora)=> {
     let salarioDia
     let horaExtra = horasTrabajadas - 8
     if (horasTrabajadas <= 8) {
@@ -21,6 +21,6 @@ registroEmpleados.forEach(({ nombre, horasTrabajadas, tarifaHora }) => {
     const salarioDia = calcularPagoDiario(horasTrabajadas, tarifaHora)
 
 
-    console.log(`Empleado ${nombre}| Horas: ${horasTrabajadas}| pago total del dia ${salarioDia}`);
+    console.log(`El empleado ${nombre}| trabajó: ${horasTrabajadas} horas| el pago total del dia es ${salarioDia}`);
 })
 
