@@ -6,7 +6,7 @@ const catalogoInicial = [
 
 const catalogoCompleto = [...catalogoInicial,{ id: 4, titulo: "Node.js Backend", precio: 80000, disponible: true } ];
 
-const cursosDisponibles = catalogoCompleto.filter(({disponible})=>{return disponible===true})
+const cursosDisponibles = catalogoCompleto.filter(({disponible})=>disponible)
 
 let catalogoTituloYprecio = cursosDisponibles.map(({titulo, precio})=>{
     return (`El curso ${titulo}, tiene una inversión de ${precio}`);
